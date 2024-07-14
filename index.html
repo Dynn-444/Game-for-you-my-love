@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Romántico para Génesis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Juego Romántico para Génesis</h1>
+
+        <div class="question">
+            <h2>¿Cuál es mi cumpleaños?</h2>
+            <div class="options">
+                <label>
+                    <input type="radio" name="question1" value="7 de noviembre del 2006"> 7 de noviembre del 2006
+                </label>
+                <label>
+                    <input type="radio" name="question1" value="7 de diciembre del 2006"> 7 de diciembre del 2006
+                </label>
+            </div>
+            <button onclick="checkAnswer(1, '7 de noviembre del 2006'); showNextQuestion()">Comprobar Respuesta</button>
+        </div>
+
+        <div class="question hidden">
+            <h2>¿Cuáles son los nombres de mis gatas?</h2>
+            <div class="options">
+                <label>
+                    <input type="radio" name="question2" value="Luna y Zazha"> Luna y Zazha
+                </label>
+                <label>
+                    <input type="radio" name="question2" value="Sol y Estrella"> Sol y Estrella
+                </label>
+            </div>
+            <button onclick="checkAnswer(2, 'Luna y Zazha'); showNextQuestion()">Comprobar Respuesta</button>
+        </div>
+
+        <div class="question hidden">
+            <h2>¿Qué carrera estoy estudiando?</h2>
+            <div class="options">
+                <label>
+                    <input type="radio" name="question3" value="Comercio exterior"> Comercio exterior
+                </label>
+                <label>
+                    <input type="radio" name="question3" value="Ingeniería informática"> Ingeniería informática
+                </label>
+            </div>
+            <button onclick="checkAnswer(3, 'Comercio exterior'); showNextQuestion()">Comprobar Respuesta</button>
+        </div>
+
+        <div class="question hidden">
+            <h2>¿Cuál es el nombre de mi mejor amiga?</h2>
+            <div class="options">
+                <label>
+                    <input type="radio" name="question4" value="Marylinn"> Marylinn
+                </label>
+                <label>
+                    <input type="radio" name="question4" value="Ana"> Ana
+                </label>
+            </div>
+            <button onclick="checkAnswer(4, 'Marylinn'); showNextQuestion()">Comprobar Respuesta</button>
+        </div>
+
+        <div id="result"></div>
+
+        <div id="specialImage" class="hidden">
+            <h2>¡Lo has logrado!</h2>
+            <p>Aquí tienes una imagen especial:</p>
+            <img src="https://i.imgur.com/dzrcstO.jpeg" alt="Imagen especial" style="max-width: 100%; border-radius: 10px;">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
